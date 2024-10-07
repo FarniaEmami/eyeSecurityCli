@@ -1,0 +1,27 @@
+{
+  "name": "ingest-CSV-cli",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "bin": {
+    "ingest-csv": "./dist/index.js"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/minimist": "^1.2.5",
+    "rimraf": "^5.0.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "chalk": "^4.0.0",
+    "csv-parser": "^3.0.0",
+    "fs": "^0.0.1-security",
+    "minimist": "^1.2.8"
+  }
+}
